@@ -20,4 +20,8 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: two_percent_milk
+    shield: dactyl_cc_left
+  - board: nrfmicro_13
+    shield: dactyl_cc_right
+  - board: nrfmicro_13
+    shield: settings_reset
