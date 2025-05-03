@@ -29,21 +29,22 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)                                         
         label = "KSCAN";
 
         diode-direction = "col2row";
-//        row-gpios
-//            = <&gpio0 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0 from the schematic file
- //           , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1 from the schematic file
-//            , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2 from the schematic file
- //           , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3 from the schematic file
-//            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 4 from the schematic file
-//            , <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 5 from the schematic file
-//            ;
+
         row-gpios
-            = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // SCL = D0
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0_22 = D9
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // P0_24 = D10
-            , <&pro_micro 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // P1_00 = D11
-            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0_11 = D5
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // P1_04 = D13
-            ;
+            = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // SCL/P0.22
+            , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.24
+            , <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P1.00
+            , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.11
+            , <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P1.04
+            , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // P0.31
+
+                col-gpios
+            = <&gpio0 9 GPIO_ACTIVE_HIGH>    // P0.09
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>   // P0.10
+            , <&gpio1 11 GPIO_ACTIVE_HIGH>   // P1.11
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>   // P1.13
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>   // P1.15
+            , <&gpio0 2 GPIO_ACTIVE_HIGH>    // P0.02
+            , <&gpio0 29 GPIO_ACTIVE_HIGH>;  // P0.29
     };
 };
