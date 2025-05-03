@@ -15,7 +15,7 @@
 &none         &kp GRAVE     &kp BSLH      &kp LEFT      &kp RIGHT                                                             &kp DOWN      &kp UP        &kp LBKT      &kp RBKT      &none
                                                                       &kp EQUAL     &kp MINUS   &kp LBKT      &kp RBKT
                                                                                     &kp GRAVE   &kp BSPC
-                                                        &kp LCTRL     &kp LALT      &kp LGUI    &kp DEL       &kp RET       &kp SP
+                                                        &kp LCTRL     &kp LALT      &kp LGUI    &kp DEL       &kp RETURN       &kp SPACE
             >;
         };
     };
