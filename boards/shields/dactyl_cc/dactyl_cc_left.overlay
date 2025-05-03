@@ -1,0 +1,15 @@
+// dactyl_cc_left.overlay
+
+#include "dactyl_cc.dtsi" // Notice that the main dtsi files are included in the overlay.
+
+&kscan0 {
+        col-gpios
+            = <&gpio0 10 GPIO_ACTIVE_HIGH>   // P0.09
+            , <&gpio0 16 GPIO_ACTIVE_HIGH>   // P0.10
+            , <&gpio1 14 GPIO_ACTIVE_HIGH>   // P1.11
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>   // P1.13
+            , <&gpio1 18 GPIO_ACTIVE_HIGH>   // P1.15
+            , <&gpio0 19 GPIO_ACTIVE_HIGH>   // P0.02
+            , <&gpio0 20 GPIO_ACTIVE_HIGH>;  // P0.29
+            ;
+};
