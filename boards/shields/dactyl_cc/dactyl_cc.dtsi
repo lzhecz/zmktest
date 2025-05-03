@@ -38,6 +38,5 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)                                         
             , <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // P0.11
             , <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>   // P1.04
             ;
-
     };
 };

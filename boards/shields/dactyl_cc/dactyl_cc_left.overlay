@@ -1,6 +1,4 @@
-// dactyl_cc_left.overlay
-
-#include "dactyl_cc.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "dactyl_cc.dtsi"
 
 &kscan0 {
         col-gpios
